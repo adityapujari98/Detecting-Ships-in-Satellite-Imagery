@@ -9,7 +9,6 @@ from PIL import Image
 
 model_path = os.path.join('model', 'ship-model.h5')
 
-
 @st.cache(allow_output_mutation=True)
 def model_load():
     model = tf.keras.models.load_model(model_path)
